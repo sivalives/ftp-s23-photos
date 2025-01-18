@@ -4,17 +4,17 @@ from concurrent.futures import ThreadPoolExecutor
 from progress.bar import Bar  # Importing Bar from progress.bar
 
 # FTP server credentials
-FTP_HOST = '10.0.0.50'
-FTP_PORT = 2121  # Change this to your FTP server's port number
+FTP_HOST = '10.0.0.10'
+FTP_PORT = 2221  # Change this to your FTP server's port number
 FTP_USER = 'android'
 FTP_PASS = 'android'
 
 # Remote folder in your phone
-#REMOTE_FOLDER = '/DCIM/Camera'
 REMOTE_FOLDER = '/Camera'
+#REMOTE_FOLDER = '/Camera'
 
 # Local folder to download files
-LOCAL_FOLDER = '/Volumes/HDD/photos/s23-pics'
+LOCAL_FOLDER = '/wd-black/photos_s23_2025'
 
 # File to keep track of successfully copied files
 LOG_FILE = 'copied_files.log'
@@ -23,7 +23,7 @@ LOG_FILE = 'copied_files.log'
 FAILED_LOG_FILE = 'failed_downloads.log'
 
 # Number of threads for parallel downloading
-NUM_THREADS = 15  # Adjust this value according to your preference
+NUM_THREADS = 3  # Adjust this value according to your preference
 
 def remove_copied_files():
     # Get list of files in local folder

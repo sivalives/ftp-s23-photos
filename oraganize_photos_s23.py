@@ -37,8 +37,8 @@ def organize_files_parallel(source_dir, target_dir, num_threads):
         executor.map(lambda filename: organize_file(filename, source_dir, target_dir), filenames)
 
 # Source and target directories
-source_directory = '/Volumes/HDD/photos/s23-pics'  # Change this to your source directory
-target_directory = '/Volumes/Seagate_4TB/1.Photos/organised_s23_pics'  # Change this to your target directory
+source_directory = '/wd-black/photos_s23_2025'  # Change this to your source directory
+target_directory = '/media/siva/Seagate_4TB/staging_photos'  # Change this to your target directory
 num_threads = 50  # Change this to the desired number of threads
 
 # Organize files in parallel with specified number of threads

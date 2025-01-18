@@ -3,8 +3,8 @@ from ftplib import FTP
 from concurrent.futures import ThreadPoolExecutor
 
 # FTP server credentials
-FTP_HOST = '10.0.0.50'
-FTP_PORT = 2121  # Change this to your FTP server's port number
+FTP_HOST = '10.0.0.10'
+FTP_PORT = 2221  # Change this to your FTP server's port number
 FTP_USER = 'android'
 FTP_PASS = 'android'
 
